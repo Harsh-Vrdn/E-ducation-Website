@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 23%;
+    border: 2px solid white;
+    border-radius: 37px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.navlist {
+
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.navlist li {
+    list-style: none;
+    padding: 0px 32px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navlist li a:hover {
+    color: grey;
+}
+
+.rightnav {
+    /* background-color:black; */
+    width: 30%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+#search {
+    margin: 8px 0px;
+}
+
+.background {
+    background: rgb(0, 0, 0, 0.7) url("Img/Bg1.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 70%;
+    margin: auto;
+    padding-top: 100px;
+    height: 30%;
+}
+
+.firstsection {
+    height: 80vh;
+}
+
+.firsthalf {
+    width: 80%;
+    display: flex;
+    justify-content: cnenter;
+}
+
+.secondhalf {
+    width: 30%;
+    padding-left: 30px;
+}
+
+.secondhalf img {
+    height: 150px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.textbig {
+    font-size: 26px;
+    padding-bottom: 4px;
+}
+
+.textsmall {
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.btn {
+    width: 89px;
+    font-size: 11px;
+    padding: 2px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: grey;
+}
+
+.btn-sm {}
+
+.rightsec {
+    /* height: 500px; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.imgfluid {
+    width: 300px;
+    border: 2px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.rightsec2 {
+    /* height: 300px; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.x {
+    padding-left: 3px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+.contacthead {
+    padding: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    width: 63%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-contact {}
+
+.text-footer {
+    padding-top: 3px;
+    height: 5vh;
+    color: white;
+    text-align: center;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    right: 2%;
+    top: 10px;
+}
+
+.line{
+    width: 33px;
+    height: 4px;
+    background-color: white;
+    margin: 3px 3px;
+    border-radius: 2px;
+}
+@media only screen and (max-width:828px) {
+    .navlist {
+        flex-direction: column;
+        height: 50vh;
+    }
+
+    .navlist li {
+        padding-bottom: 10px;
+
+    }
+
+    .navbar {
+        height:300px;
+        transition: all 0.5s ease-out;
+        flex-direction: column;
+    }
+    .rightnav{
+        text-align: center;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        padding-left: 15px;
+    }
+    .logo img{
+        width: 43px;
+        margin-bottom: 8px;
+    }
+    .burger{
+        display:block;
+    }
+    
+    .h-nav{
+        height:50px;
+    }
+
+    .vis{
+        opacity: 0;
+    }
+    .secondhalf img{
+        width: 80%;
+        height: 80%;
+    }
+    .secondhalf{
+        padding-bottom: 2px;
+    }
+    .rightsec{
+        flex-direction: column-reverse;
+    }
+    .rightsec2{
+        flex-direction: column-reverse;
+    }
+    .textbig{
+        text-align: center;
+    }
+    
+    .textsmall{
+        text-align: center;
+    }
+
+    .button{
+        text-align: center;
+    }
+}
